@@ -1,0 +1,13 @@
+import numpy as np
+a = np.arange(1,20)
+print(a)
+b = a.reshape(4, 5)
+print(b)
+#c = b.replace(max(axis=1), 0)
+
+c = b.max(axis=1)
+
+#row_maxes = c.max(axis=1).reshape(-1, 1)
+#c[:] = np.where(c == row_maxes, 0, 1)
+
+print(c)
